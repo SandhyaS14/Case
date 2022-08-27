@@ -1,0 +1,34 @@
+img {
+    width:  225px;
+    height: 225px;
+    border-radius: 30px;
+}
+
+.test_image_and_result {
+    padding: 50px;
+    background-color: grey;
+    height: auto;
+    width: 90%;
+    border-radius: 30px;
+    margin: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: larger;
+}
+
+body {
+    text-align: center;
+    background: radial-gradient(deepskyblue 0%, deeppink 100%);
+}
+
+h5 {
+    background-color: white;
+    border-radius: 25px;
+    height: 30px;
+    font-size: large;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+hr {
+    height: 5px !important;
+    background-color: wheat;
+}

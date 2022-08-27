@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Case Study</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <h1>Case study between MobileNet and Google Lens</h1>
+
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="flip flop.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Womens Flip Flop</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span>Computor Mouse</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is better</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="glass.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Ice Pack</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span>Sewing Machine</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is WAAAYYY better</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="notebook.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Quad Ruled Composition Book</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span> Television System</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is better</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="lunch bag.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span>Cooler lunch bag </span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span>Ignitor </span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Googlens is better</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="mouse.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Optic Computor Mouse</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span>Computor mouse</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is better</h4>
+            </div>
+        </div>
+                <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="phone.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> iPhone 7</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span> Cell phone</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Draw</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="remote.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Honeywell Quickset Tower Fan HYF260</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span> Electric Switch</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is better</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="TV remote.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> TV Remote Control</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span> Remote Control</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Draw</h4>
+            </div>
+        </div>
+        <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Imag -</b>
+                <img src="water bottle.jpg" class="img-responsive">
+            </li>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b> - 
+                <span> Empty water bottle</span>
+            </h5>
+            <h5 class="result col-sm-4 col-xs-12">
+                Output on <b>MobileNet</b> - 
+                <span> Soda bottle</span>
+            </h5>
+            <div class="miniresult col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google Lens is better</h4>
+            </div>
+        </div>
+    </ol>
+</body>
+</html>
